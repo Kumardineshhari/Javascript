@@ -36,6 +36,10 @@
             
         }
 
+        .dark{
+            background-color: darkorange;
+        }
+
 
     </style>
 </head>
@@ -63,6 +67,37 @@
     </div>
 
     <button id="color">ChangeColor</button>
+
+    <button onclick="colour()">Change Background Color</button>
+    
+
+    <div>
+        <input type="text" placeholder="Enter the value for 1: " id="a"><br>
+        <input type="text" placeholder="Enter the value for 2: "
+        id="b"><br>
+
+        
+
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <div class="ans">
+
+    </div>
+
+    <div class="addtable">
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <button onclick="createtable()">Calculate</button>
+    
+        <table border="2px" id="table">
+            <tr>
+                <th>Num1</th>
+                <th>Num2</th>
+                <th>Result</th>
+            </tr>
+        </table>
+    </div>
     
 
     <script src="./event.js"></script>
