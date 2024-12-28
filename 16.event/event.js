@@ -52,8 +52,31 @@ changecolor.addEventListener("click", () => {
     } else {
         change.style.backgroundColor = "green";
     }
-    
 
 });
 
+let colour = ()=>{
+    document.body.classList.toggle("dark")
+}
 
+
+let calculate = ()=>{
+    let a = parseInt(document.getElementById("a").value)
+    let b = parseInt(document.getElementById("b").value)
+    let add = Number(a+b)
+    // console.log(add);
+    
+    let ans = document.querySelector(".ans")
+    ans.innerHTML= `<h1>the addition value is ${a+b}</h1>`;
+    
+}
+
+let createtable = () => {
+
+    let a = parseInt(document.getElementById("num1").value);
+    let b = parseInt(document.getElementById("num2").value);
+    let table = document.querySelector("#table");
+    let tr = document.createElement("tr");
+    tr.innerHTML = `<td>${a}</td> <td>${b}</td> <td>${a + b}</td>`;
+    table.append(tr);
+};
